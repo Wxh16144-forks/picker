@@ -185,6 +185,9 @@ export default function useFilledProps<
   // ======================== Format ========================
   const [formatList, maskFormat] = useFieldFormat<DateType>(internalPicker, mergedLocale, format);
 
+  console.log('formatList:', formatList);
+
+  
   // ======================= ReadOnly =======================
   const mergedInputReadOnly = useInputReadOnly(formatList, inputReadOnly, multiple);
 

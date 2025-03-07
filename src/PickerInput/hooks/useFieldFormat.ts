@@ -9,6 +9,7 @@ export function useFieldFormat<DateType = any>(
 ): [formatList: FormatType<DateType>[], maskFormat?: string] {
   return React.useMemo(() => {
     const rawFormat = getRowFormat(picker, locale, format);
+    console.log('rawFormat', rawFormat,{picker, locale, format});
 
     const formatList = toArray(rawFormat);
 

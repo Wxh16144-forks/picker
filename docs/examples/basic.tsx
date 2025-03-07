@@ -4,6 +4,7 @@ import React from 'react';
 import '../../assets/index.less';
 import { Picker, type PickerRef } from '../../src';
 import momentGenerateConfig from '../../src/generate/moment';
+import dayGenerateConfig from '../../src/generate/dayjs';
 import enUS from '../../src/locale/en_US';
 import zhCN from '../../src/locale/zh_CN';
 
@@ -24,25 +25,37 @@ export default () => {
   };
 
   const sharedProps = {
-    generateConfig: momentGenerateConfig,
-    value,
-    onSelect,
-    onChange,
-    presets: [
-      {
-        label: 'Hello World!',
-        value: moment(),
-      },
-      {
-        label: 'Now',
-        value: () => moment(),
-      },
-    ],
+    // generateConfig: momentGenerateConfig,
+    // value,
+    // onSelect,
+    // onChange,
+    // presets: [
+    //   {
+    //     label: 'Hello World!',
+    //     value: moment(),
+    //   },
+    //   {
+    //     label: 'Now',
+    //     value: () => moment(),
+    //   },
+    // ],
   };
 
   const keyDown = (e, preventDefault) => {
     if (e.keyCode === 13) preventDefault();
   };
+
+  return (
+    <Picker<any>
+      {...sharedProps}
+      generateConfig={dayGenerateConfig}
+      locale={enUS}
+      showTime={{
+        showMillisecond: true,
+        use12Hours: true,
+      }}
+    />
+  );
 
   return (
     <div>
@@ -52,7 +65,6 @@ export default () => {
         <div style={{ margin: '0 8px' }}>
           <h3>Basic</h3>
           <Picker<Moment> {...sharedProps} locale={zhCN} suffixIcon="SUFFIX" />
-          <Picker<Moment> {...sharedProps} locale={enUS} />
         </div>
         <div style={{ margin: '0 8px' }}>
           <h3>Uncontrolled</h3>
