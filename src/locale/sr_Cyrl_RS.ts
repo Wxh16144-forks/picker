@@ -20,7 +20,7 @@ const locale: Locale = {
 
   fieldDateFormat: 'DD.MM.YYYY',
 
-  dateTimeFormat: 'DD.MM.YYYY HH:mm:ss',
+  fieldDateTimeFormat: 'DD.MM.YYYY HH:mm:ss',
 
   previousMonth: 'Претходни месец (PageUp)',
   nextMonth: 'Следећи месец (PageDown)',

@@ -22,7 +22,7 @@ const locale: Locale = {
   yearFormat: 'YYYY-يىلى',
   dayFormat: 'D-كۈنى',
   fieldDateFormat: 'YYYY-يىلىM-ئاينىڭD-كۈنى',
-  dateTimeFormat: 'YYYY-يىلىM—ئاينىڭD-كۈنى، HH:mm:ss',
+  fieldDateTimeFormat: 'YYYY-يىلىM—ئاينىڭD-كۈنى، HH:mm:ss',
   previousYear: 'ئالدىنقى يىلى (Controlبىلەن يۆنىلىش كونۇپكىسى)',
   nextYear: 'كېلەركى يىلى (Controlبىلەن يۆنىلىش كونۇپكىسى)',
   previousDecade: 'ئالدىنقى يىللار',

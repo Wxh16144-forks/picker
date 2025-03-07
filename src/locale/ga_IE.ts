@@ -21,7 +21,7 @@ const locale: Locale = {
 
   fieldDateFormat: 'D/M/YYYY',
 
-  dateTimeFormat: 'D/M/YYYY HH:mm:ss',
+  fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
 
   previousMonth: 'An mhí roimhe seo (PageUp)',
   nextMonth: 'An mhí seo chugainn (PageDown)',

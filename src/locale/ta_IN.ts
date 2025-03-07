@@ -21,7 +21,7 @@ const locale: Locale = {
 
   fieldDateFormat: 'M/D/YYYY',
 
-  dateTimeFormat: 'M/D/YYYY HH:mm:ss',
+  fieldDateTimeFormat: 'M/D/YYYY HH:mm:ss',
 
   previousMonth: 'முந்தைய மாதம் (PageUp)',
   nextMonth: 'அடுத்த மாதம் (PageDown)',

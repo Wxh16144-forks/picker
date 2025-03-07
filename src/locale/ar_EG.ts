@@ -18,7 +18,7 @@ const locale: Locale = {
   yearSelect: 'اختيار السنة',
   decadeSelect: 'اختيار العقد',
   fieldDateFormat: 'M/D/YYYY',
-  dateTimeFormat: 'M/D/YYYY HH:mm:ss',
+  fieldDateTimeFormat: 'M/D/YYYY HH:mm:ss',
   previousMonth: 'الشهر السابق (PageUp)',
   nextMonth: 'الشهر التالى(PageDown)',
   previousYear: 'العام السابق (Control + left)',

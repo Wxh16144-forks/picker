@@ -24,7 +24,7 @@ const locale: Locale = {
   yearFormat: 'YYYY年',
 
   fieldDateFormat: 'YYYY年M月D日',
-  dateTimeFormat: 'YYYY年M月D日 HH時mm分ss秒',
+  fieldDateTimeFormat: 'YYYY年M月D日 HH時mm分ss秒',
   previousYear: '上一年 (Control鍵加左方向鍵)',
   nextYear: '下一年 (Control鍵加右方向鍵)',
   previousDecade: '上一年代',

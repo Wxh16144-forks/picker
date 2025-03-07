@@ -19,7 +19,7 @@ const locale: Locale = {
   yearFormat: 'YYYY',
   fieldDateFormat: 'D/M/YYYY',
   dayFormat: 'D',
-  dateTimeFormat: 'D/M/YYYY HH:mm:ss',
+  fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
   monthBeforeYear: true,
   previousMonth: 'ያለፈው ወር (PageUp)',
   nextMonth: 'ቀጣይ ወር (PageDown)',
