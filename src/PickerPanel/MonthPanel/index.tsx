@@ -37,15 +37,16 @@ export default function MonthPanel<DateType extends object = any>(
   };
 
   const getCellText = (date: DateType) => {
-    const month = generateConfig.getMonth(date);
+    if (locale.fieldMonthFormat) {
+      return formatValue(date, {
+        locale,
+        format: locale.fieldMonthFormat,
+        generateConfig,
+      });
+    }
 
-    return locale.fieldMonthFormat
-      ? formatValue(date, {
-          locale,
-          format: locale.fieldMonthFormat,
-          generateConfig,
-        })
-      : monthsLocale[month];
+    const month = generateConfig.getMonth(date);
+    return monthsLocale[month];
   };
 
   const getCellClassName = () => ({
