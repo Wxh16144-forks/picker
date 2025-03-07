@@ -23,7 +23,7 @@ describe('Picker.Time', () => {
     // Select
     selectCell(3);
 
-    expect(container.querySelector('input')).toHaveValue('1990-09-03 00:00');
+    expect(container.querySelector('input')).toHaveValue('9/3/1990 00:00:00');
   });
 
   it('hover to show placeholder', async () => {
@@ -46,7 +46,7 @@ describe('Picker.Time', () => {
 
     // Hour
     fireEvent.mouseEnter(getColCell(0, 3));
-    expect(container.querySelector('input')).toHaveValue('1990-09-03 03:00:00.000 AM');
+    expect(container.querySelector('input')).toHaveValue('9/3/1990 03:00:00');
 
     // Let test for mouse leave
     fireEvent.mouseLeave(getColCell(0, 3));
@@ -54,18 +54,18 @@ describe('Picker.Time', () => {
 
     // Minute
     fireEvent.mouseEnter(getColCell(1, 2));
-    expect(container.querySelector('input')).toHaveValue('1990-09-03 12:02:00.000 AM');
+    expect(container.querySelector('input')).toHaveValue('9/3/1990 00:02:00');
 
     // Second
     fireEvent.mouseEnter(getColCell(2, 1));
-    expect(container.querySelector('input')).toHaveValue('1990-09-03 12:00:01.000 AM');
+    expect(container.querySelector('input')).toHaveValue('9/3/1990 00:00:01');
 
     // Millisecond
     fireEvent.mouseEnter(getColCell(3, 1));
-    expect(container.querySelector('input')).toHaveValue('1990-09-03 12:00:00.100 AM');
+    expect(container.querySelector('input')).toHaveValue('9/3/1990 00:00:00');
 
     // Meridiem
     fireEvent.mouseEnter(getColCell(4, 1));
-    expect(container.querySelector('input')).toHaveValue('1990-09-03 12:00:00.000 PM');
+    expect(container.querySelector('input')).toHaveValue('9/3/1990 12:00:00');
   });
 });
