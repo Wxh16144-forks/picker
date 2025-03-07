@@ -18,7 +18,7 @@ const locale: Locale = {
   decadeSelect: 'አስርት አመታት ምረጥ',
   yearFormat: 'YYYY',
   fieldDateFormat: 'D/M/YYYY',
-  dayFormat: 'D',
+  cellDateFormat: 'D',
   fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
   monthBeforeYear: true,
   previousMonth: 'ያለፈው ወር (PageUp)',
