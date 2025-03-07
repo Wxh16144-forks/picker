@@ -20,8 +20,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'D-M-YYYY',
 
-  fieldDateTimeFormat: 'D-M-YYYY HH:mm:ss',
-
   previousMonth: 'Алдыңғы ай (PageUp)',
   nextMonth: 'Келесі ай (PageDown)',
   previousYear: 'Алдыңғы жыл (Control + left)',

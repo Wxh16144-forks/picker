@@ -20,8 +20,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'D/M/YYYY',
 
-  fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
-
   previousMonth: 'Meha peş (PageUp))',
   nextMonth: 'Meha paş (PageDown)',
   previousYear: 'Sala peş (Control + şep)',

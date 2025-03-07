@@ -21,8 +21,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'M/D/YYYY',
 
-  fieldDateTimeFormat: 'M/D/YYYY HH:mm:ss',
-
   previousMonth: 'חודש קודם (PageUp)',
   nextMonth: 'חודש הבא (PageDown)',
   previousYear: 'שנה שעברה (Control + left)',

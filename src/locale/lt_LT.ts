@@ -21,7 +21,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'YYYY-MM-DD',
   cellDateFormat: 'DD',
-  fieldDateTimeFormat: 'YYYY-MM-DD HH:MM:SS',
 
   previousMonth: 'Buvęs mėnesis (PageUp)',
   nextMonth: 'Kitas mėnesis (PageDown)',

@@ -21,8 +21,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'D/M/YYYY',
 
-  fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
-
   previousMonth: 'Luna anterioară (PageUp)',
   nextMonth: 'Luna următoare (PageDown)',
   previousYear: 'Anul anterior (Control + stânga)',

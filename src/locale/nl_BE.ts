@@ -20,8 +20,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'D-M-YYYY',
 
-  fieldDateTimeFormat: 'D-M-YYYY HH:mm:ss',
-
   previousMonth: 'Vorige maand (PageUp)',
   nextMonth: 'Volgende maand (PageDown)',
   previousYear: 'Vorig jaar (Control + left)',

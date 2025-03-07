@@ -21,7 +21,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'DD.MM.YYYY',
   cellDateFormat: 'DD',
-  fieldDateTimeFormat: 'DD.MM.YYYY HH:mm:ss',
 
   previousMonth: 'Forrige måned (PageUp)',
   nextMonth: 'Neste måned (PageDown)',

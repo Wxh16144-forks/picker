@@ -19,7 +19,6 @@ const locale: Locale = {
   yearSelect: 'Yilni tanlang',
   decadeSelect: "O'n yilni tanlang",
   fieldDateFormat: 'M/D/YYYY',
-  fieldDateTimeFormat: 'M/D/YYYY HH:mm:ss',
   previousMonth: 'Oldingi oy (PageUp)',
   nextMonth: 'Keyingi oy (PageDown)',
   previousYear: "O'tgan yili (Control + left)",

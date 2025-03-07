@@ -22,7 +22,6 @@ const locale: Locale = {
   decadeSelect: 'Pilih dekad',
 
   fieldDateFormat: 'M/D/YYYY',
-  fieldDateTimeFormat: 'M/D/YYYY HH:mm:ss',
   previousYear: 'Tahun lepas (Ctrl+left)',
   nextYear: 'Tahun depan (Ctrl+right)',
   previousDecade: 'Dekad lepas',

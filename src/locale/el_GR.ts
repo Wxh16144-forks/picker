@@ -20,8 +20,6 @@ const locale: Locale = {
 
   fieldDateFormat: 'D/M/YYYY',
 
-  fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
-
   previousMonth: 'Προηγούμενος μήνας (PageUp)',
   nextMonth: 'Επόμενος μήνας (PageDown)',
   previousYear: 'Προηγούμενο έτος (Control + αριστερά)',

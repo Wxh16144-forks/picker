@@ -19,7 +19,6 @@ const locale: Locale = {
   yearFormat: 'YYYY',
   fieldDateFormat: 'D/M/YYYY',
   cellDateFormat: 'D',
-  fieldDateTimeFormat: 'D/M/YYYY HH:mm:ss',
   monthBeforeYear: true,
   previousMonth: 'ያለፈው ወር (PageUp)',
   nextMonth: 'ቀጣይ ወር (PageDown)',
