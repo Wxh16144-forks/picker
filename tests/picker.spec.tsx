@@ -194,7 +194,7 @@ describe('Picker.Basic', () => {
   describe('value', () => {
     it('defaultValue', () => {
       const { container } = render(<DayPicker defaultValue={getDay('1989-11-28')} />);
-      expect(container.querySelector('input').value).toEqual('1989-11-28');
+      expect(container.querySelector('input').value).toEqual('11/28/1989');
     });
 
     it('uncontrolled', () => {
@@ -207,8 +207,8 @@ describe('Picker.Basic', () => {
       expect(onChange).toHaveBeenCalled();
 
       expect(isSame(onChange.mock.calls[0][0], '1990-09-11')).toBeTruthy();
-      expect(onChange.mock.calls[0][1]).toEqual('1990-09-11');
-      expect(container.querySelector('input').value).toEqual('1990-09-11');
+      expect(onChange.mock.calls[0][1]).toEqual('9/11/1990');
+      expect(container.querySelector('input').value).toEqual('9/11/1990');
     });
 
     it('controlled', () => {
@@ -222,16 +222,16 @@ describe('Picker.Basic', () => {
       closePicker(container);
 
       expect(isSame(onChange.mock.calls[0][0], '2011-11-03')).toBeTruthy();
-      expect(document.querySelector('input').value).toEqual('2011-11-11');
+      expect(document.querySelector('input').value).toEqual('11/11/2011');
 
       rerender(<DayPicker value={onChange.mock.calls[0][0]} onChange={onChange} />);
 
-      expect(document.querySelector('input').value).toEqual('2011-11-03');
+      expect(document.querySelector('input').value).toEqual('11/3/2011');
 
       // Raw change value
       rerender(<DayPicker value={getDay('1999-09-09')} onChange={onChange} />);
 
-      expect(document.querySelector('input').value).toEqual('1999-09-09');
+      expect(document.querySelector('input').value).toEqual('9/9/1999');
     });
   });
 
@@ -867,7 +867,7 @@ describe('Picker.Basic', () => {
     expect(document.querySelector('input').value).toEqual('aaaaa');
 
     closePicker(container);
-    expect(document.querySelector('input').value).toEqual('2000-01-01');
+    expect(document.querySelector('input').value).toEqual('1/1/2000');
   });
 
   it('switch picker should change format', () => {
@@ -877,7 +877,7 @@ describe('Picker.Basic', () => {
     expect(document.querySelector('input').value).toEqual('1999-09-03 00:00:00');
 
     [
-      ['date', '1999-09-03'],
+      ['date', '9/3/1999'],
       ['month', '1999-09'],
       ['quarter', '1999-Q3'],
       ['year', '1999'],
@@ -995,11 +995,11 @@ describe('Picker.Basic', () => {
       fireEvent.mouseEnter(cell);
       jest.runAllTimers();
 
-      expect(document.querySelector('input').value).toBe('2020-07-24');
+      expect(document.querySelector('input').value).toBe('7/24/2020');
       expect(document.querySelector('.rc-picker-input')).toHaveClass('rc-picker-input-placeholder');
 
       selectCell(24);
-      expect(document.querySelector('input').value).toBe('2020-07-24');
+      expect(document.querySelector('input').value).toBe('7/24/2020');
       expect(document.querySelector('.rc-picker-input')).not.toHaveClass(
         'rc-picker-input-placeholder',
       );
@@ -1012,7 +1012,7 @@ describe('Picker.Basic', () => {
       fireEvent.mouseEnter(cell);
       jest.runAllTimers();
 
-      expect(document.querySelector('input').value).toBe('2020-07-24');
+      expect(document.querySelector('input').value).toBe('7/24/2020');
       expect(document.querySelector('.rc-picker-input')).toHaveClass('rc-picker-input-placeholder');
 
       fireEvent.mouseLeave(cell);
